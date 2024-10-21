@@ -8,7 +8,7 @@ namespace Tyuiu.NovikovDS.Sprint5.Task0.V6.Test
         [TestMethod]
         public void TestMethod()
         {
-            string path = Path.Combine("C:", "Users", "InSanity", "source", "repos", "Tyuiu.NovikovDS.Sprint5", "Tyuiu.NovikovDS.Sprint5.Task0.V6", "bin", "Debug", "net8.0", "OutPutFileTask0.txt");
+            string path = Path.Combine("C:", "Users", "InSanity", "AppData", "Local", "Temp", "OutPutFileTask0.txt");
 
             FileInfo fileinfo = new(path);
             bool fileExists = fileinfo.Exists;
