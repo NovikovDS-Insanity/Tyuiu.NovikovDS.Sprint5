@@ -39,7 +39,8 @@ for (int i = 0; i < mass.GetLength(0); i++)
 {
     for (int j = 0; j < mass.GetLength(1); j++)
     {
-        Console.Write(mass[i, j] + ", ");
+        if (j == mass.GetLength(1) - 1) Console.Write(mass[i, j]);
+        else Console.Write(mass[i, j] + ", ");
     }
     Console.WriteLine();
 }
@@ -54,11 +55,11 @@ Console.WriteLine("Ответ записан в файл по пути:\n" + pat
 Console.WriteLine("\nПолученные значения: ");
 
 string[] massiv = File.ReadAllLines(path).ToArray();
-int[,] mass2 = new int[massiv.Length, massiv[0].Split("; ").Length];
+int[,] mass2 = new int[massiv.Length, massiv[0].Split(";").Length];
 
 for (int i = 0; i < massiv.Length; i++)
 {
-    string[] temp = massiv[i].Split("; ");
+    string[] temp = massiv[i].Split(";");
     for (int j = 0; j < temp.Length; j++)
         mass2[i, j] = Convert.ToInt32(temp[j]);
 }

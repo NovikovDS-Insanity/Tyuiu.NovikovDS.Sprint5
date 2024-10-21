@@ -20,7 +20,7 @@ namespace Tyuiu.NovikovDS.Sprint5.Task2.V16.Lib
                     if (matrix[i, j] < 0) matrix[i, j] = 0;
                     else matrix[i, j] = 1;
 
-                    if (j != matrix.GetLength(1) - 1) str += matrix[i, j] + "; ";
+                    if (j != matrix.GetLength(1) - 1) str += matrix[i, j] + ";";
                     else str += matrix[i, j];
                 }
                 if (i != matrix.GetLength(0) - 1) File.AppendAllText(path, str + Environment.NewLine);
