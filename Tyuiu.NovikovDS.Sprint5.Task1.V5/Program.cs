@@ -22,21 +22,28 @@ Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                             
 Console.WriteLine("***************************************************************************");
 
 int start = -5, end = 5;
+string path = ds.SaveToFileTextData(start, end);
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Ответ записан в файл по пути:\n" + ds.SaveToFileTextData(start, end));
+Console.WriteLine("Ответ записан в файл по пути:\n" + path);
 Console.WriteLine("\nПолученные значения: ");
 
+string[] massiv = File.ReadAllLines(path).ToArray();
+double[] mass2 = new double[massiv.Length];
 
-string[] massiv = File.ReadAllLines(ds.SaveToFileTextData(start, end)).ToArray();
-
-int k = start;
 for (int i = 0; i < massiv.Length; i++)
 {
-    Console.WriteLine("* X = " + k + " \tF(X) = " + massiv[i]);
+    string temp = massiv[i];
+    mass2[i] = Convert.ToDouble(temp);
+}
+
+int k = start;
+for (int i = 0; i < mass2.Length; i++)
+{
+    Console.WriteLine("* X = " + k + " \tF(X) = " + mass2[i]);
     k++;
 }
 

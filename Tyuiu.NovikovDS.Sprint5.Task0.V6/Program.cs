@@ -19,6 +19,8 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 
+string path = ds.SaveToFileTextData(x);
+
 Console.Write("Введите значение X: ");
 int x;
 do
@@ -31,8 +33,8 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Ответ записан в файл по пути:\n" + ds.SaveToFileTextData(x));
-Console.WriteLine("Значение выражения: " + File.ReadAllText(ds.SaveToFileTextData(x))); 
+Console.WriteLine("Ответ записан в файл по пути:\n" + path);
+Console.WriteLine("Значение выражения: " + File.ReadAllText(path)); 
 
 Console.WriteLine("***************************************************************************");
 Console.ReadLine();
