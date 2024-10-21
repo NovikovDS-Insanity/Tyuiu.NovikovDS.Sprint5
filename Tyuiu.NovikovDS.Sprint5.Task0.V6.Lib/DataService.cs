@@ -13,7 +13,7 @@ namespace Tyuiu.NovikovDS.Sprint5.Task0.V6.Lib
 
             File.WriteAllText(path, Convert.ToString(temp));
 
-            return path;
+            return File.ReadAllText(path);
         }
     }
 }

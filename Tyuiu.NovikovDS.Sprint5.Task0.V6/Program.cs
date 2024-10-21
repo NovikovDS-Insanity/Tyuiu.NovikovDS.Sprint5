@@ -31,8 +31,8 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-Console.WriteLine("Ответ записан в файл по пути:\n" + ds.SaveToFileTextData(x) + "\n");
-Console.WriteLine("Значение выражения: " + File.ReadAllText(ds.SaveToFileTextData(x)));
+Console.WriteLine("Ответ записан в файл.");
+Console.WriteLine("Значение выражения: " + ds.SaveToFileTextData(x));
 
 Console.WriteLine("***************************************************************************");
 Console.ReadLine();
