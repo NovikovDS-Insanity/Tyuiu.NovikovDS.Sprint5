@@ -6,11 +6,14 @@ namespace Tyuiu.NovikovDS.Sprint5.Task4.V29.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double x = Convert.ToDouble(File.ReadAllText(path));
             double y;
 
-            if (x == 0) y = -1;
-            else y = Math.Round((x / (2 * x) + Math.Sin(Math.Pow(x, 2))), 3);
+            string x = File.ReadAllText(path);
+            x = x.Replace('.', ',');
+            double temp = Convert.ToDouble(x);
+
+            if (temp == 0) y = -1;
+            else y = Math.Round((temp / (2 * temp) + Math.Sin(Math.Pow(temp, 2))), 3);
 
             return y;
         }
