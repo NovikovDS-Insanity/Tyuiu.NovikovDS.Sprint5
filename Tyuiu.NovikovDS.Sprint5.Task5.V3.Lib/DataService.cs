@@ -9,14 +9,16 @@ namespace Tyuiu.NovikovDS.Sprint5.Task5.V3.Lib
             double sum = 0;
 
             string str = File.ReadAllText(path);
-            string[] chisla = str.Split(',');
+            string[] chisla = str.Split(' ');
 
             for (int i = 0; i < chisla.Length; i++)
             {
-                double temp = Convert.ToDouble(chisla[i]);
-                sum += temp;
-            }
+                chisla[i] = chisla[i].Replace(".", ",");
 
+                double temp = Convert.ToDouble(chisla[i]);
+                if (temp % 1 == 0) sum += temp;
+            }
+            
             return sum;
         }
     }

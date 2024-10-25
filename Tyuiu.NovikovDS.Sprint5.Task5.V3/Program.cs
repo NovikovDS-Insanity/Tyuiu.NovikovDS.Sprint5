@@ -30,7 +30,7 @@ Console.WriteLine("*************************************************************
 
 double y = ds.LoadFromDataFile(path);
 
-Console.WriteLine("* Сумма всех чисел: " + y);
+Console.WriteLine("* Сумма всех целых чисел: " + y);
 
 Console.WriteLine("***************************************************************************");
 Console.ReadLine();
