@@ -15,7 +15,7 @@ namespace Tyuiu.NovikovDS.Sprint5.Task5.V3.Lib
             {
                 chisla[i] = chisla[i].Replace(".", ",");
 
-                double temp = Convert.ToDouble(chisla[i]);
+                double temp = Math.Round(Convert.ToDouble(chisla[i]), 3);
                 if (temp % 1 == 0) sum += temp;
             }
             
