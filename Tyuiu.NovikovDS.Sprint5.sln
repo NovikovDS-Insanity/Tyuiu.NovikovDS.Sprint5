@@ -51,7 +51,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.NovikovDS.Sprint5.Tas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.NovikovDS.Sprint5.Task5.V3.Test", "Tyuiu.NovikovDS.Sprint5.Task5.V3.Test\Tyuiu.NovikovDS.Sprint5.Task5.V3.Test.csproj", "{14506A45-E453-4C1F-8883-2EFF1BDE348F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "task6", "task6", "{2BD488DC-D131-4C03-BE7A-471A79A1A235}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task6", "Task6", "{2BD488DC-D131-4C03-BE7A-471A79A1A235}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.NovikovDS.Sprint5.Task6.V10", "Tyuiu.NovikovDS.Sprint5.Task6.V10\Tyuiu.NovikovDS.Sprint5.Task6.V10.csproj", "{F409A279-6A82-4B02-863D-81810A8CDC0C}"
 EndProject
